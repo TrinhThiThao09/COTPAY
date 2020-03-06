@@ -4,15 +4,71 @@
   <title>Vài điều về chúng tôi</title>
   <meta name="viewport" content="width=device-width">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="asset/css/stylehd.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="asset/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="asset/css/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="asset/css/slick.css">
   <link rel="stylesheet" type="text/css" href="asset/css/style.css">
+  <link rel="stylesheet" type="text/css" href="asset/css/stylehd.css">
 </head>
 <body>
-  <header>
-
-  </header>
+  <section class="page-top header">
+    <div class="container">
+      <div class="header-img clearfix">
+        <div class="btn-mobile">
+          <button><a class="openbtn" onclick="openNav()">☰</a></button>
+        </div>
+        <div class="header-img-content">
+          <a href="#">
+            <img src="asset/images/cot2.png" width="120" height="90">
+          </a>
+        </div>
+        <div class="header-img-btn">
+          <a href="#" class="btn-a"><i class="fa fa-user-circle"></i> Login</a>
+          <a href="#" class="btn-a"><i class="fa fa-user-plus"></i> Sign out</a>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <img src="asset/images/vie.png" width="50" height="30"> VN
+            </button>
+            <div class="dropdown-content">
+              <a href="#"><img src="asset/images/vie.png" width="50" height="30"> VN</a>
+              <a href="#"><img src="asset/images/us.png" width="50" height="30"> US</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Merchant</a></li>
+          <li><a href="#">Customer</a></li>
+          <li><a href="#">Business</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="menu-mobile">
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+          <a href="#">Home</a>
+          <a href="#">Merchant</a>
+          <a href="#">Customer</a>
+          <a href="#">Business</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+          <a href="#"><i class="fa fa-user-circle"></i> Login</a>
+          <a href="#"><i class="fa fa-user-plus"></i> Sign out</a>
+          <button class="dropdown-btn"><img src="asset/images/vie.png" width="50" height="30"> VN</button>
+          <div class="dropdown-container">
+            <a href="#"><img src="asset/images/vie.png" width="50" height="30"> VN</a>
+            <a href="#"><img src="asset/images/us.png" width="50" height="30"> US</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <div class="container">
     <div class="row">
       <div class="col-md-6">
@@ -53,6 +109,10 @@
               <i class="fa fa-user" aria-hidden="true"></i>
               <a href="#">Tạo tài khoản cá nhân</a>
             </div>
+            <div class="icon-create-account">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <a href="#">Tạo tài khoản bán hàng</a>
+            </div>
           </div>
           <div class="col-md-6">
             <div class="icon-create-account">
@@ -66,14 +126,36 @@
     <div class="border-bottom">
       <p>Chúng tôi tạo ra nền tảng nhằm mang đến sự thuận tiện cho cả khách hàng và doanh nghiệp</p>
       <p>Đọc kĩ điều khoản khi sử dụng</p>
-      <p>Cpoyight @2020 by ....All right is ..</p>
+      <p style="text-align: center;">Cpoyight @2020 by ....All right is ..</p>
     </div>
   </div>
 
   <script src="asset/js/jquery.min.js" defer></script>
   <script src="asset/js/bootstrap.min.js" defer></script>
   <script src="asset/js/slick.min.js" defer></script>
-  <script src="asset/js/select.js" defer></script>
-  <script src="asset/js/script.js" defer></script>
+  <script type="text/javascript">
+    function openNav() {
+      document.getElementById("mySidepanel").style.width = "220px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidepanel").style.width = "0";
+    }
+  // menu2
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+  }
+</script>
 </body>
 </html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cài đặt</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="asset/css/stylehd.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/style-menu.css">
+
+	<link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="asset/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="mainnav">
+		<ul>
+			<li class="thefirst"><a href="#"><i class="fa fa-home"></i></a>
+				<ul class="sub-menu">
+					<li><a href="#">Tổng quan</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i class="fa fa-list-alt"></i></a>
+				<ul class="sub-menu">
+					<li><label>Quản lý giao dịch</label></li>
+					<li><a href="#">Đơn cần xử lý</a></li>
+					<li><a href="#">Đơn đang xử lý</a></li>
+					<li><a href="#">Đơn đã hoàn thành</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i class="fa fa-cart-plus"></i></a>
+				<ul class="sub-menu">
+					<li><a href="#">Tạo đơn hàng</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i class="fa fa-plus-square"></i></a>
+				<ul class="sub-menu">
+					<li><a href="#">Nạp tiền ví Bonus</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i class="fa fa-codepen"></i></a>
+				<ul class="sub-menu">
+					<li><a href="#">Rút tiền ví Bonus</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i class="fa fa-cog"></i></a>
+				<ul class="sub-menu">
+					<li><label>Cài đặt</label></li>
+					<li><a href="#">Thông tin chung</a></li>
+					<li><a href="#">Đổi mật khẩu</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i class="fa fa-sign-in"></i></a>
+				<ul class="sub-menu">
+					<li><a href="#">Đăng xuất</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="btn-mobile clearfix" style="width: 100%">
+		<button style="margin-top: 20px;"><a class="openbtn" onclick="openNav()">☰</a></button>
+		<div class="header-img-content">
+			<a href="#">
+				<img src="asset/images/cot1.png" width="120" height="90">
+			</a>
+		</div>
+	</div>
+	<div class="menu-mobile">
+		<div id="mySidepanel" class="sidepanel">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="#">Home</a>
+			<a href="#">Merchant</a>
+			<a href="#">Customer</a>
+			<a href="#">Business</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="#"><i class="fa fa-user-circle"></i> Login</a>
+			<a href="#"><i class="fa fa-user-plus"></i> Sign out</a>
+			<button class="dropdown-btn"><img src="asset/images/vie.png" width="50" height="30"> VN</button>
+			<div class="dropdown-container">
+				<a href="#"><img src="asset/images/vie.png" width="50" height="30"> VN</a>
+				<a href="#"><img src="asset/images/us.png" width="50" height="30"> US</a>
+			</div>
+		</div>
+	</div>
+	<div class="main-menu">
+		<div class="menu-label ml-3">
+			<h2>Cài đặt</h2>
+			<span>27/01/2020</span>
+		</div>
+		<div class="menu-setting mt-5">
+			<div class="menu-setting-img ml-2">
+				<img src="asset/images/a1.jpg" width="70" height="70">
+				<div class="menu-setting-img-content">
+					<h4>Khánh123</h4>
+					<span>khanh@gmail.com</span>
+				</div>
+			</div>
+			<div class="menu-setting-content mt-5">
+				<div class="row" style="margin: 0">
+					<div class="col-md-1"></div>
+					<div class="col-md-8">
+						<div class="row mt-3">
+							<div class="col-md-3">
+								<label>Email:</label>
+							</div>
+							<div class="col-md-9">
+								<input type="email" name="email" class="form-control">
+							</div>
+						</div>
+						<div class="row mt-3">
+							<div class="col-md-3">
+								<label>Số điện thoại:</label>
+							</div>
+							<div class="col-md-9">
+								<input type="number" name="number" class="form-control">
+							</div>
+						</div>
+						<div class="row mt-3">
+							<div class="col-md-3">
+								<label>Tên shop:</label>
+							</div>
+							<div class="col-md-9">
+								<input type="text" name="name" class="form-control">
+							</div>
+						</div>
+						<div class="row mt-3">
+							<div class="col-md-3">
+								<label>Giới tính:</label>
+							</div>
+							<div class="col-md-9">
+								<select class="form-control" style="width: 200px;">
+									<option>Nam</option>
+									<option>Nữ</option>
+									<option>Khác</option>
+								</select>
+							</div>
+						</div>
+						<div class="row mt-3">
+							<div class="col-md-3">
+								<label>Ngày sinh:</label>
+							</div>
+							<div class="col-md-9">
+								<div class="row">
+									<div class="col-md-4">
+										<select class="form-control">
+											<option>01</option>
+											<option>02</option>
+											<option>03</option>
+										</select>
+									</div>
+									<div class="col-md-4">
+										<select class="form-control">
+											<option>01</option>
+											<option>02</option>
+											<option>03</option>
+										</select>
+									</div>
+									<div class="col-md-4">
+										<select class="form-control">
+											<option>01</option>
+											<option>02</option>
+											<option>03</option>
+										</select>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3"></div>
+					</div>
+				</div>
+				<div class="button-btn mt-5 text-center">
+					<button type="button" class="btn btn-primary">Hủy</button>
+					<button type="button" class="btn btn-primary">Lưu thay đổi</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="asset/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="asset/js/jquery.min.js"></script>
+
+	<!-- menu mobile -->
+	<script type="text/javascript">
+		function openNav() {
+			document.getElementById("mySidepanel").style.width = "220px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidepanel").style.width = "0";
+		}
+		// menu2
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block") {
+					dropdownContent.style.display = "none";
+				} else {
+					dropdownContent.style.display = "block";
+				}
+			});
+		}
+	</script>
+	</html>

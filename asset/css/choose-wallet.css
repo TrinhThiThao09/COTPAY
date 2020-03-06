@@ -146,6 +146,26 @@
       font-size: 35px;
       color: #174A84;
       font-weight: bold; }
+  .choose-wallet .change-password p {
+    margin-bottom: 21px; }
+  .choose-wallet .change-password input {
+    width: 60%;
+    outline: none;
+    padding: 5px 10px;
+    margin-bottom: 5px; }
+  .choose-wallet .change-password .submit {
+    margin: 20px 0px; }
+    .choose-wallet .change-password .submit a {
+      padding: 5px 15px 7px;
+      background: #174a84;
+      border-radius: 20px;
+      color: #fff;
+      -webkit-transition: 0.2s;
+      -o-transition: 0.2s;
+      transition: 0.2s; }
+    .choose-wallet .change-password .submit a:hover {
+      text-decoration: none;
+      background: #0870b7; }
   .choose-wallet .deposits-withdrawals {
     margin: 20px;
     border: 1px solid #DDDDDD; }

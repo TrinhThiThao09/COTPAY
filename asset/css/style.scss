@@ -180,6 +180,7 @@ h2{
 }
 .icon-create-account{
 	text-align: center;
+	margin-bottom: 30px;
 	i{
 		font-size: 90px;
 		display: block;
@@ -197,73 +198,7 @@ h2{
 		background: #062287;
 	}
 }
-/* The container */
-.container {
-	display: block;
-	position: relative;
-	padding-left: 35px;
-	margin-bottom: 12px;
-	cursor: pointer;
-	font-size: 15px;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
 
-/* Hide the browser's default checkbox */
-.container input {
-	position: absolute;
-	opacity: 0;
-	cursor: pointer;
-	height: 0;
-	width: 0;
-}
-
-/* Create a custom checkbox */
-.checkmark {
-	position: absolute;
-	top: 4px;
-	left: 10px;
-	height: 15px;
-	width: 15px;
-	background-color: #eee;
-}
-
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-	background-color: #ccc;
-}
-
-/* When the checkbox is checked, add a blue background */
-.container input:checked ~ .checkmark {
-	background-color: #2196F3;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-	content: "";
-	position: absolute;
-	display: none;
-}
-
-/* Show the checkmark when checked */
-.container input:checked ~ .checkmark:after {
-	display: block;
-}
-
-/* Style the checkmark/indicator */
-.container .checkmark:after {
-	left: 6px;
-	top: 2px;
-	width: 5px;
-	height: 10px;
-	border: solid white;
-	border-width: 0 3px 3px 0;
-	-webkit-transform: rotate(45deg);
-	-ms-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
 .search{
 	cursor: auto;
 	text-align: center;
@@ -272,7 +207,7 @@ h2{
 		display: inline-block;
 		position: relative;
 		form{
-			max-width: 400px;
+			min-width: 400px;
 			right: 0px;
 			position: relative;
 			input{
@@ -360,10 +295,93 @@ h2{
 		color: #6A605B;
 		margin-bottom: 0px;
 		cursor: auto;
+		font-size: 14px;
 	}
 }
+
+.slick-prev{
+	position: absolute;
+	right: 17px;
+	top: 35%;
+	outline: none;
+	border: none;
+	background: #0006;
+	z-index: 1;
+	opacity: .5;
+	padding: 0px 12px;
+	i{
+		color: #fff;
+		font-size: 50px;
+	}
+}
+.slick-next{
+	position: absolute;
+	left: 17px;
+	top: 35%;
+	outline: none;
+	border: none;
+	background: #0006;
+	z-index: 1;
+	opacity: .5;
+	padding: 0px 12px;
+	i{
+		color: #fff;
+		font-size: 50px;
+	}
+}
+.img-slider{
+	img{
+		width: 100%;
+	}
+}
+.title-deal{
+	font-weight: bold;
+	color: #065387;
+	margin: 30px 0px;
+}
+.history-deal{
+	color: #000000b3;
+	font-weight: bold;
+}
+
+td{
+	img{
+		width: 50px;
+		border-radius: 50%;
+	}
+	a{
+		color: #000;
+		padding: 6px 10px;
+		background: #61bcc5;
+		border-radius: 4px;
+	}
+	.delete{
+		padding: 0px!important;
+		background: transparent;
+		i{
+			font-size: 30px;
+			color: red;
+		}
+	}
+}
+.start-deal{
+	text-align: right;
+	margin-bottom: 30px;
+	a{
+		padding: 10px 20px;
+		background: #065387;
+		border-radius: 10px;
+		color: #fff;
+	}
+}
+
 @media all and (max-width: 555px){
 	.search .scan{
 		margin-top: 20px;
+	}
+}
+@media all and (max-width: 450px){
+	.search .box-search form{
+		min-width: 300px!important;
 	}
 }

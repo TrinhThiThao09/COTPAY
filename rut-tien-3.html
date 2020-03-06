@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quản Lý Ví COT Nạp Rút Tiền</title>
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="asset/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/slick.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/choose-wallet.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/stylehd.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/style-menu.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/style.css">
+</head>
+<body style="background: #E6ECEF;">
+	<div id="mainnav">
+		<ul>
+			<li class="thefirst"><a href="#"><i class="fa fa-home"></i></a>
+				<ul class="sub-menu">
+					<li><a href="#">Tổng quan</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i class="fa fa-list-alt"></i></a>
+				<ul class="sub-menu">
+					<li><label>Quản lý giao dịch</label></li>
+					<li><a href="#">Đơn cần xử lý</a></li>
+					<li><a href="#">Đơn đang xử lý</a></li>
+					<li><a href="#">Đơn đã hoàn thành</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i class="fa fa-cart-plus"></i></a>
+				<ul class="sub-menu">
+					<li><a href="#">Tạo đơn hàng</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i class="fa fa-plus-square"></i></a>
+				<ul class="sub-menu">
+					<li><a href="#">Nạp tiền ví Bonus</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i class="fa fa-codepen"></i></a>
+				<ul class="sub-menu">
+					<li><a href="#">Rút tiền ví Bonus</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i class="fa fa-cog"></i></a>
+				<ul class="sub-menu">
+					<li><label>Cài đặt</label></li>
+					<li><a href="#">Thông tin chung</a></li>
+					<li><a href="#">Đổi mật khẩu</a></li>
+				</ul>
+			</li>
+			<li><a href="#"><i class="fa fa-sign-in"></i></a>
+				<ul class="sub-menu">
+					<li><a href="#">Đăng xuất</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="btn-mobile clearfix" style="width: 100%">
+		<button style="margin-top: 20px;"><a class="openbtn" onclick="openNav()">☰</a></button>
+		<div class="header-img-content">
+			<a href="#">
+				<img src="asset/images/cot1.png" width="120" height="90">
+			</a>
+		</div>
+	</div>
+	<div class="menu-mobile">
+		<div id="mySidepanel" class="sidepanel">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="#">Home</a>
+			<a href="#">Merchant</a>
+			<a href="#">Customer</a>
+			<a href="#">Business</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+			<a href="#"><i class="fa fa-user-circle"></i> Login</a>
+			<a href="#"><i class="fa fa-user-plus"></i> Sign out</a>
+			<button class="dropdown-btn"><img src="asset/images/vie.png" width="50" height="30"> VN</button>
+			<div class="dropdown-container">
+				<a href="#"><img src="asset/images/vie.png" width="50" height="30"> VN</a>
+				<a href="#"><img src="asset/images/us.png" width="50" height="30"> US</a>
+			</div>
+		</div>
+	</div>
+	<div class="choose-wallet main-menu">
+		<div class="title-manager">
+			<div class="title">
+				<h1>Quản lý ví COT</h1>
+				<p>27/1/2019</p>
+			</div>
+			<div class="excessamount">
+				<h2>Số tiền dư</h2>
+				<p>1.789.000</p>
+			</div>
+			<div class="spacer"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-3 col-sm-3"></div>
+			<div class="col-md-6 col-sm-6">
+				<div class="deposits-withdrawals withdrawals">
+					<div class="title-text withdrawals">
+						<h1>Số tiền cần rút</h1>
+					</div>
+					<div class="amount-of-money"><p>5.200.000</p></div>
+				</div>
+				<div class="title-text withdrawals" style="background: #40B649;">
+					<h1>Hình thức chuyển tiền</h1>
+				</div>
+				<div class="option withdrawals">
+					<label class="container">
+						<div class="box-option">
+							<a href="#" title>
+								<i class="fa fa-university" aria-hidden="true"></i>
+							</a>
+							<div class="text-content">
+								<h2>Chuyển khoản ngân hàng</h2>
+								<p>Thực hiện thủ công</p>
+							</div>
+							<div class="spacer"></div>
+						</div>
+						<input type="radio" checked="checked" name="radio">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">
+						<div class="box-option">
+							<a href="#" title>
+								<i class="fa fa-university" aria-hidden="true"></i>
+							</a>
+							<div class="text-content">
+								<h2>Thanh toán online bằng thẻ ATM</h2>
+								<p>Thanh toán nhanh bằng thẻ ATM</p>
+							</div>
+							<div class="spacer"></div>
+						</div>
+						<input type="radio" name="radio">
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">
+						<div class="box-option">
+							<a href="#" title>
+								<i class="fa fa-university" aria-hidden="true"></i>
+							</a>
+							<div class="text-content">
+								<h2>Thanh toán online qua Internet Banking</h2>
+								<p>Đăng nhập tài khoản Internet Banking</p>
+							</div>
+							<div class="spacer"></div>
+						</div>
+						<input type="radio" name="radio">
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="connect withdrawals">
+					<a href="#" title class="submit">Gửi lại mã</a>
+				</div>
+				<div class="input-code">
+					<label>Nhập mã</label>
+					<input type="text" name="">
+				</div>
+				<div class="connect  withdrawals">
+					<a href="#" title class="submit" style="width: 100%;display: block;">Rút tiền</a>
+				</div>
+			</div>
+			<div class="col-md-3 col-sm-3"></div>
+		</div>
+	</div>
+</div>
+<script src="asset/js/jquery.min.js" defer></script>
+<script src="asset/js/bootstrap.min.js" defer></script>
+<script src="asset/js/slick.min.js" defer></script>
+<script src="asset/js/select.js" defer></script>
+<script src="asset/js/script.js" defer></script>
+<!-- menu mobile -->
+<script type="text/javascript">
+	function openNav() {
+		document.getElementById("mySidepanel").style.width = "220px";
+	}
+
+	function closeNav() {
+		document.getElementById("mySidepanel").style.width = "0";
+	}
+		// menu2
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+			dropdown[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var dropdownContent = this.nextElementSibling;
+				if (dropdownContent.style.display === "block") {
+					dropdownContent.style.display = "none";
+				} else {
+					dropdownContent.style.display = "block";
+				}
+			});
+		}
+	</script>
+</body>
+</html>
